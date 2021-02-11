@@ -1,0 +1,185 @@
+.form {
+    min-width: 360px;
+    height: 789px;
+    padding: 7% 30px;
+    box-sizing: border-box;
+    background: #FFFFFF;
+    box-shadow: 0px 12px 24px rgba(44, 39, 56, 0.02), 0px 32px 64px rgba(44, 39, 56, 0.04);
+    border-radius: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.form__header {
+    height: 69px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.form__body {
+    height: 582px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.form__title {
+    margin: 0;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 34px;
+    color: #2C2738;
+}
+.form__is-account {
+    font-size: 16px;
+    color:#2C2738;
+}
+.form__link {
+    text-decoration: none;
+    color: #0880AE;
+}
+.form__label {
+    font-weight: 500;
+    font-size: 16px;
+    color: #756F86;
+    display: inline-block;
+    line-height: 30px;
+}
+.form__input {
+    display: block;
+    border: 1px solid #DBE2EA;
+    outline: none;
+    box-shadow: 0px 4px 8px rgba(44, 39, 56, 0.04);
+    border-radius: 6px;
+    width: 100%;
+    height: 52px;
+    padding-left: 16px;
+    box-sizing: border-box;
+    color: #2C2738;
+    font-size: 16px;
+}
+.form__input:focus {
+    border: 2px solid #0880AE;
+}
+.form__input::placeholder {
+    font-size: 16px;
+    color: #7C9CBF;
+}
+.form__input_expand {
+    background: url('../../icons/Expand.svg') no-repeat right 11px top 50%;
+    cursor: pointer;
+    margin-top: 3px;
+}
+
+.form__message {
+    position: relative;
+}
+.form__error {
+    color: #FF7171;
+    font-size: 14px;
+    position: absolute;
+    top: 10px;
+}
+.language-dropdown {
+    display: none;
+}
+.language-dropdown_open {
+    position: relative;
+    display: block;
+}
+
+.form__checkbox {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+    margin: 10px 0 0 20px
+}
+.form__checkbox + .form__label {
+    position: relative;
+    padding-left: 36px;
+    cursor: pointer;
+}
+.form__checkbox + .form__label::before {
+    content: '';
+	position: absolute;
+    left: 0;
+	width: 26px;
+    height: 26px;
+    background: #FFFFFF;
+    border: 1px solid #DBE2EA;
+    box-shadow: 0px 4px 8px rgba(44, 39, 56, 0.04);
+    border-radius: 4px;
+}
+
+.form__checkbox:checked + .form__label::before {
+    width: 24px;
+    height: 24px;
+    /* box-sizing: border-box; */
+    border: 2px solid #0880AE;
+    background: url('../../icons/Check.svg') 50% 50% no-repeat;
+}
+.form__submit {
+    width: 100%;
+    height: 56px;
+    border-radius: 6px;
+    font-weight: 500;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: #0880AE;
+    color: #EBF4F8;
+    box-shadow: 0px 2px 4px rgba(44, 39, 56, 0.08), 0px 4px 8px rgba(44, 39, 56, 0.08);
+}
+.form__submit:hover {
+    box-shadow: 0px 12px 24px rgba(44, 39, 56, 0.08), 0px 24px 48px rgba(44, 39, 56, 0.16);
+}
+.form__submit:active {
+    border: 2px solid rgba(44, 39, 56, 0.86);
+}
+.form__submit:disabled {
+    background: #DBE2EA;
+    box-shadow: 0px 4px 8px rgba(44, 39, 56, 0.08);
+    color: #2C2738;
+}
+.form__submit_active {
+    cursor: pointer;
+    background-color: #0880AE;
+    color: #EBF4F8;
+    box-shadow: 0px 2px 4px rgba(44, 39, 56, 0.08), 0px 4px 8px rgba(44, 39, 56, 0.08);
+}
+.form__submit_active:hover {
+    box-shadow: 0px 12px 24px rgba(44, 39, 56, 0.08), 0px 24px 48px rgba(44, 39, 56, 0.16);
+}
+.form__submit_active:active {
+    border: 2px solid rgba(44, 39, 56, 0.86);
+}
+.form__submit:disabled {
+    background: #DBE2EA;
+    box-shadow: 0px 4px 8px rgba(44, 39, 56, 0.08);
+    color: #2C2738;
+    cursor: default;
+}
+
+.language-dropdown__list {
+    position: absolute;
+    top: -12px;
+    left: 0;
+    right: 0;
+    display: block;
+    background-color: #FFFFFF;
+    z-index: 2;
+    border: 1px solid #DBE2EA;
+    box-shadow: 0px 4px 8px rgba(44, 39, 56, 0.04), 0px 20px 20px rgba(44, 39, 56, 0.04);
+    border-radius: 6px;
+    padding: 24px 0 23px;
+}
+.language-dropdown__link {
+    list-style: none;
+    padding-left: 16px;
+    height: 44px;
+    line-height: 44px;
+    cursor: pointer;
+}
+.language-dropdown__link:hover {
+    background: #EBF4F8;
+}
